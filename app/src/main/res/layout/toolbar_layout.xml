@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ratecard_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+
+    <RelativeLayout
+            android:id="@+id/ratecard_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/menu_button"
+                android:src="@drawable/menu"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+    <RelativeLayout
+            android:id="@+id/rlNotificationRing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp">
+
+        <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/ivNotificationRing"
+                android:src="@drawable/ring"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:visibility="visible"/>
+
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/tvNumberNotification"
+                android:layout_marginTop="11dp"
+                android:padding="1dp"
+                android:background="@drawable/notification_background"
+                android:textColor="@color/colorAccent"
+                android:layout_alignRight="@id/ivNotificationRing"
+                android:gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="7dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="99+"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ivlogo"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:visibility="visible"/>
+
+    <RelativeLayout
+            android:id="@+id/notificaiton_rl"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/notifications"/>
+        <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/unread_notifications_count"
+                android:text="4"
+                android:textSize="8sp"
+                android:layout_margin="3dp"
+                android:textColor="@color/colorPrimary"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

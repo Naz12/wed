@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">EARSNA</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="forget_password_">Forgot Password</string>
+    <string name="policy_msg">By clicking sign in you with our</string>
+    <string name="terms">Terms</string>
+    <string name="and">and</string>
+    <string name="privicy_policy">Privacy Policy</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_tv">Sign Up?</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="date">Date</string>
+    <string name="phoneNo">Phone Number</string>
+    <string name="phoneNo_">Phone No:</string>
+    <string name="street">Street</string>
+    <string name="zip">Zip</string>
+    <string name="city">City</string>
+    <string name="area">Area (sqm)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="search">Search</string>
+    <string name="label_alert">Alert</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="changePassword">Change Password?</string>
+
+
+    <string name="type">Type:</string>
+    <string name="orderDate">Date:</string>
+    <string name="address_">Address:</string>
+    <string name="status">Status</string>
+    <string name="name">Name:</string>
+    <string name="owner_name">Owner Name:</string>
+    <string name="phone">Phone:</string>
+    <string name="email_order">Email:</string>
+    <string name="cleaning_type">Cleaning Type:</string>
+    <string name="images">Images</string>
+    <string name="DateOfBirth">Date Of Birth:</string>
+    <string name="cityy">City:</string>
+    <string name="streett">Street:</string>
+    <string name="areaa">Area:</string>
+    <string name="country_">Country:</string>
+    <string name="forgot_msg">Please enter your phone number. we will send you a code to reset your password.</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="changePassword_">Change Password</string>
+    <string name="booking">Booking</string>
+    <string name="account_no">Account No:</string>
+    <string name="time">Time</string>
+    <string name="add_booking">Add Booking</string>
+    <string name="add_details">Advertisement Detail</string>
+    <string name="total_amount">Total Amount:</string>
+    <string name="booking_type">Type</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="cash">Cash</string>
+    <string name="bank">Bank</string>
+    <string name="payment_msg">Please Select The Payment Method</string>
+    <string name="internet_msg">Internet Is Not Connected.</string>
+    <string name="customer_detail">Customer Details</string>
+    <string name="event_detail">Event Details</string>
+    <string name="booking_detail">Booking Details</string>
+    <string name="booking_date">Booking Date:</string>
+    <string name="start_date">Starting Date:</string>
+    <string name="end_date">Ending Date:</string>
+    <string name="btype">Type:</string>
+    <string name="price">Total Price:</string>
+    <string name="deposit">Deposit:</string>
+    <string name="deposit__">Deposit</string>
+    <string name="remaining_price">Remaining Price:</string>
+    <string name="cancel">Cancel Booking</string>
+    <string name="complete_booking">Complete Booking</string>
+    <string name="booking_status">Booking Status:</string>
+    <string name="deposit_">Deposit</string>
+    <string name="deposit_msg">Add Deposit Amount:</string>
+    <string name="phone_msg">Please enter the 6 digit verification code.</string>
+    <string name="verify">Verify</string>
+    <string name="invoice">Invoice</string>
+    <string name="date_">Date:</string>
+    <string name="searchedBy">Searched By:</string>
+    <string name="dateAndTime"><![CDATA[Date & Time]]></string>
+    <string name="name_">Name</string>
+    <string name="days">Days</string>
+    <string name="size_">Size:</string>
+    <string name="details_">Details:</string>
+    <string name="service">Services:</string>
+    <string name="my_price">Price:</string>
+    <string name="service_detail">Service Details</string>
+    <string name="service_">Service:</string>
+    <string name="mandatory">Mandatory</string>
+    <string name="non_mandatory">Non Mandatory</string>
+    <string name="full_payment">Full Payment</string>
+    <string name="inprogress_msg">Are you sure? Do you want to complete the booking without payment?</string>
+    <string name="advance_paid_msg">Are you sure? Do you want to complete the booking without fully payment?</string>
+    <string name="fully_paid_msg">Are you sure? Do you want to complete the booking?</string>
+    <string name="cancelled_msg">Are you sure? Do you want to cancel the booking?</string>
+    <string name="onAddBooking_msg">Are you sure? Do you want to add booking?</string>
+
+    <string name="price_per_day">Price:</string>
+    <string name="destination">Destination:</string>
+    <string name="confirm_add">Confirm Addvertisement</string>
+    <string name="rating_">Rating:</string>
+
+    <string name="home">Home</string>
+    <string name="events">Events</string>
+    <string name="select_start_date">Select start date</string>
+    <string name="notifications">Notifications</string>
+    <string name="quantity">Quantity:</string>
+    <string name="total_price">Total Price:</string>
+    <string name="service_name">Service Name</string>
+    <string name="more_info">More Info</string>
+    <string name="in_process">In Progress</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="choose_language">Choose Language...</string>
+    <string name="continue_cap">Continue</string>
+    <string name="my_booking">My Booking</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="share">Share</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="change_language">Change Language</string>
+    <string name="or">OR</string>
+    <string name="transaction">Transaction</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="invalid_dates">Invalid Dates</string>
+    <string name="all">All</string>
+    <string name="firebase_msg">FirebaseAuth is not in initialized</string>
+    <string name="time_out">Time Out</string>
+    <string name="no_login_status">No login_as status found!!</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="thanks_for_confirmation">Thanks For Confirmation</string>
+    <string name="type_of_payment">Type of Payment</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="price_">Price</string>
+    <string name="must_pay">Must Pay:</string>
+    <string name="confirmation_terms_condition">If you cancel the booking afterwards the money will not return.</string>
+    <string name="accept_terms_and_condition">I accept the terms</string>
+    <string name="confirm">Confirm</string>
+    <string name="check_terms">You must accept terms and conditions</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="reset">Reset</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="select_city">Select City</string>
+    <string name="enter_phone_no">Enter Phone No.</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="code_msg">We have send a code on your phone number. Please enter that code.</string>
+    <string name="change_password_msg">Create a new password and repeat that password below.</string>
+    <string name="size">Size</string>
+    <string name="filter">Filter</string>
+    <string name="filter_with">Filter with</string>
+    <string name="order">Sorting order</string>
+    <string name="asc">Ascending</string>
+    <string name="dsc">Descending</string>
+    <string name="payment_method">Payment Method:</string>
+
+    <string-array name="time_options">
+        <item>@string/morning</item>
+        <item>@string/evening</item>
+        <item>@string/night</item>
+    </string-array>
+
+    <string-array name="type_of_payment">
+        <item>@string/deposit__</item>
+        <item>@string/full_payment</item>
+    </string-array>
+
+    <string-array name="asc_dsc">
+        <item>@string/asc</item>
+        <item>@string/dsc</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rlSearchBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+        <TextView
+                android:id="@+id/searched_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/searchedBy"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/sf_compact_text_bold"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"/>
+        <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/searched_by"-->
+        <!--android:background="@drawable/spinner_background">-->
+        <!--</Spinner>-->
+
+        <RadioGroup
+                android:id="@+id/rgSearched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/searched_by"
+                android:layout_toEndOf="@+id/searched_by"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rbDateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateAndTime"
+                    android:checked="true"
+                    android:textSize="12dp"/>
+
+            <RadioButton
+                    android:id="@+id/rbName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"></View>
+
+    <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:imeOptions="flagNoExtractUi"
+            android:drawableRight="@drawable/search"
+            android:drawableEnd="@drawable/search"/>
+
+    <LinearLayout
+            android:id="@+id/llDateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="10dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+            <TextView
+                    android:id="@+id/bookingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:fontFamily="@font/sf_compact_display_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="0"
+                    android:layout_toLeftOf="@+id/no_of_days_text"
+                    android:id="@+id/tvNoOfDays"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/days"
+                    android:id="@+id/no_of_days_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookingDate"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:layout_marginTop="3dp">
+
+                <TextView
+                        android:id="@+id/startdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.5"
+                        android:background="@drawable/current_item_background"
+                        android:drawableRight="@drawable/dropdown_18_dark"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_black"
+                        android:hint="@string/select_start_date"
+                        android:textColorHint="@color/text_color_black"
+                        android:textSize="12sp"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="to"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:visibility="gone"/>
+
+                <TextView
+                        android:id="@+id/enddate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.5"
+                        android:background="@drawable/current_item_background"
+                        android:drawableRight="@drawable/dropdown_18_dark"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:hint="Select end date"
+                        android:textColorHint="@color/text_color_black"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="12dp"
+                        android:visibility="gone"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="12">
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5">
+
+                <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:fontFamily="@font/sf_compact_display_bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp"/>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTime"
+                        android:layout_marginTop="3dp">
+
+                    <Spinner
+                            android:id="@+id/spTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/searched_by"
+                            android:background="@drawable/spinner_background">
+                    </Spinner>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></View>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5">
+
+                <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city"
+                        android:fontFamily="@font/sf_compact_display_bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp"/>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvCity"
+                        android:layout_marginTop="3dp">
+
+                    <Spinner
+                            android:id="@+id/spCities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/searched_by"
+                            android:background="@drawable/spinner_background">
+                    </Spinner>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

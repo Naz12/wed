@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_item_background"
+                    android:padding="1dp"
+                    android:elevation="3dp">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="9dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <com.smarteist.autoimageslider.SliderLayout
+                                android:id="@+id/imageSlider"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scrollIndicators="bottom"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp">
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                <TextView
+                                        android:id="@+id/category_phone_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_color_black"
+                                        android:text="0324-4121448"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/sf_compact_text_regular"/>
+
+                                <TextView
+                                        android:id="@+id/category_location"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_color_black"
+                                        android:text="Amana Hall 101 Near Hassan Street New Samanabad Lahore"
+                                        android:textSize="14dp"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:layout_marginTop="5dp"
+                                        android:ellipsize="marquee"
+                                        android:singleLine="true"
+                                        android:marqueeRepeatLimit="marquee_forever"/>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                    android:id="@+id/rlMap"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                <ImageView
+                                        android:id="@+id/map_icon"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:src="@drawable/ic_google_maps_48"
+                                        android:layout_centerInParent="true"
+                                />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_item_background"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="9dp"
+                        android:elevation="5dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                        <TextView
+                                android:id="@+id/tvCustomerDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/customer_detail"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sf_compact_text_bold"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/name"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvName"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="tecnosols"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/phone"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvPhone"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="1222 222 22 "/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/email_order"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvEmail"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="ayx@gmail.com"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/DateOfBirth"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvDateOfBirth"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="YYYYMMDD"
+                                />
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/address_"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvAddress"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="ABCD"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/cityy"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvCity"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="NY"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/country_"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvCountry"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="Pakistan"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_item_background"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="9dp"
+                        android:elevation="5dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                        <TextView
+                                android:id="@+id/tvBookingDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/booking_detail"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sf_compact_text_bold"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/booking_date"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvBookingDate"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="current date"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/start_date"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvSatrtDate"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="12 june 2019"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/end_date"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvEndDate"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="14 june 2019"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/btype"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvType"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="marriage"
+                                />
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/price"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvTotalPrice"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="10000"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/deposit"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvDeposit"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="-1"
+                                        android:drawableRight="@drawable/right_arrow"
+                                        android:drawableEnd="@drawable/right_arrow"
+                                        android:drawableTint="@color/colorPrimary"
+                                />
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/remaining_price"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvRemainingPrice"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="-1"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView.Style"
+                                        android:fontFamily="@font/sf_compact_display_bold"
+                                        android:text="@string/booking_status"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                <TextView
+                                        style="@style/Zawajina.HomeTextView2.Style"
+                                        android:id="@+id/tvBookingStatus"
+                                        android:fontFamily="@font/sf_compact_text_regular"
+                                        android:text="status"/>
+                            </LinearLayout>
+                            <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/line"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_item_background"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="9dp"
+                        android:elevation="5dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+                        <TextView
+                                android:id="@+id/tvServices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/service"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sf_compact_text_bold"/>
+
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvAdminServices"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_item_background"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="9dp"
+                        android:elevation="5dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+                        <TextView
+                                android:id="@+id/tvInvoice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/invoice"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sf_compact_text_bold"/>
+
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvInvoice"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+                <RelativeLayout
+                        android:id="@+id/btnComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    <TextView
+                            android:id="@+id/tvComplete"
+                            style="@style/button_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background"
+                            android:text="@string/complete_booking"
+                            android:textColor="@color/color_text_white"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                <RelativeLayout
+                        android:id="@+id/btnCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                    <TextView
+                            android:id="@+id/tvCancel"
+                            style="@style/button_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_red_background"
+                            android:text="@string/cancel"
+                            android:textColor="@color/color_text_white"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

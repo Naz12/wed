@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_item_background"
+            android:padding="1dp">
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="9dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                <RelativeLayout
+                        android:id="@+id/rlServiceDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.9">
+
+                    <LinearLayout
+                            android:id="@+id/llData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true">
+                        <TextView
+                                android:id="@+id/tvServiceName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="@string/service_name"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/sf_compact_text_regular"/>
+
+                        <TextView
+                                android:id="@+id/tvServiceDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="No Detail asdsadsadasdsada sdasSASADSADASDASDASDsdassadasdaasdas "
+                                android:maxLines="2"
+                                android:ellipsize="end"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="0.05"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:id="@+id/tvPriceTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="@string/price"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:textStyle="bold"
+                                android:gravity="start"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginStart="0dp"/>
+
+                        <TextView
+                                android:id="@+id/tvServicePrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="9999 /-"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:layout_toRightOf="@id/tvPriceTag"
+                                android:layout_toEndOf="@id/tvPriceTag"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:id="@+id/tvQuantityTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="@string/quantity"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:textStyle="bold"
+                                android:gravity="start"/>
+
+                        <TextView
+                                android:id="@+id/tvServiceQuantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="2"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:layout_toRightOf="@id/tvQuantityTag"
+                                android:layout_toEndOf="@id/tvQuantityTag"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:id="@+id/tvTotalPriceTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="@string/total_price"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:textStyle="bold"
+                                android:gravity="start"/>
+
+                        <TextView
+                                android:id="@+id/tvTotalPrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_black"
+                                android:text="26800"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/sf_compact_text_regular"
+                                android:layout_toRightOf="@id/tvTotalPriceTag"
+                                android:layout_toEndOf="@id/tvTotalPriceTag"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

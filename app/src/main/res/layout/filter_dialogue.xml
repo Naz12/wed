@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_compact_text_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/filter"/>
+
+        <RelativeLayout
+                android:id="@+id/tvFilterName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sf_compact_text_regular"
+                    android:text="@string/name_"/>
+
+            <ImageView
+                    android:id="@+id/ivCheck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_check_primary_24dp"
+                    android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/tvFilterName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sf_compact_text_regular"
+                    android:text="@string/price_"/>
+            <ImageView
+                    android:id="@+id/ivCheck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_check_primary_24dp"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/tvFilterName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sf_compact_text_regular"
+                    android:text="@string/size"/>
+            <ImageView
+                    android:id="@+id/ivCheck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_check_primary_24dp"
+                    />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

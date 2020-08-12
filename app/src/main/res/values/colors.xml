@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#660066</color>
+    <color name="colorPrimaryDark">#80000000</color>
+    <color name="colorAccentDef">#ffffff</color>
+    <color name="colorAccent">#660066</color>
+    <color name="color_text_white">#ffffff</color>
+
+    <color name="user_text_color">#0F0F0F</color>
+    <color name="user_cancel_bg_color">#a3a3a3</color>
+    <color name="user_et_active_color">#2a2a2a</color>
+    <color name="user_et_non_active_color">#9b9b9b</color>
+
+    <color name="facebook_blue">#3b5998</color>
+    <color name="gmail_red">#ee4950</color>
+
+    <color name="grey_cancel">#a3a3a3</color>
+    <color name="nav_header_bg_color">#f4f4f4</color>
+    <color name="grey_ride_cancel">#434343</color>
+
+    <color name="home_bg_color">#f4f4f4</color>
+    <color name="home_item_bg_color">#ffffff</color>
+    <color name="home_border_color">#848484</color>
+    <color name="home_search_non_active_color">#a3a3a3</color>
+    <color name="home_search_active_color">#2a2a2a</color>
+
+    <color name="home_vehicle_details_color">#2a2a2a</color>
+    <color name="vehicle_details_border_color">#d4d4d4</color>
+
+    <color name="non_active_color">#a3a3a3</color>
+    <color name="non_active_border_edit_profile_color">#d6d6d6</color>
+
+    <color name="text_color_black">#000</color>
+    <color name="golder_rating_color">#dfa102</color>
+    <color name="current_location_blue">#003366</color>
+
+    <color name="transparent_gray">#90888888</color>
+    <color name="blue">#1172C9</color>
+    <color name="font">#333333</color>
+    <color name="fontHeaders">#111111</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#ebebeb</color>
+    <color name="dark_gray">#a9a9a9</color>
+    <color name="lite_gray">#CFCDCD</color>
+    <color name="transparent_black">#70000000</color>
+    <color name="transparent_lite_black">#30000000</color>
+    <color name="transparent_white">#90ffffff</color>
+    <color name="header_blue">#1695e6</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#029241</color>
+
+    <color name="red">#EB020C</color>
+    <color name="grey">#C8C8C8</color>
+    <color name="golden">#BF9B30</color>
+
+    <color name="unread_notifcation">#96A4EB</color>
+    <color name="light_red">#FB6D6D</color>
+</resources>
